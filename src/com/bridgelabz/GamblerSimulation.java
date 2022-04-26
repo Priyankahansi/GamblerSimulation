@@ -42,27 +42,28 @@ public class GamblerSimulation {
         }
         System.out.println("amount left:" + "" + amount);
     }
-    static void method4(){
-        final int win=1;
-        final int loss=0;
-        int amount=100;
-        int sum=0;
-        for(int i=0;i<=20;i++){
+
+    static void method4() {
+        final int win = 1;
+        final int loss = 0;
+        int amount = 100;
+        int sum = 0;
+        for (int i = 0; i <= 20; i++) {
             int options = betnum.nextInt(2);
-            switch (options){
+            switch (options) {
                 case win:
-                    amount =amount+bet;
+                    amount = amount + bet;
+                    System.out.println("its win day");
                     break;
                 case loss:
-                    amount=amount-bet;
+                    amount = amount - bet;
+                    System.out.println("its loss day");
                     break;
-
-
             }
-            sum=sum+amount;
+            sum = sum + amount;
 
         }
-        System.out.println("the amount left:"+ ""+sum);
+        System.out.println("the amount left:" + "" + sum);
     }
 
     public static void main(String[] args) {
