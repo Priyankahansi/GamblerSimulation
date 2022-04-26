@@ -2,11 +2,17 @@ package com.bridgelabz;
 
 public class GamblerSimulation {
 
+    static int stake=100;
+    static int bet = 1;
+
     static void method1() {
-        System.out.println("welocme to Gambler simulation");
+        System.out.println("the glambler had a stake:" +"" +stake);
+        System.out.println("the glambler will bet:" +bet);
     }
+
+
     public static void main(String[] args) {
         method1();
     }
-
 }
+
